@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OpenCartAPITestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="CustomerRegistrationTests(failed)">
+    <classes>
+      <class name="com.opencart.api.testcases.customer.RegisterCustomer">
+        <methods>
+          <include name="verifyCustomerRegistration" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- com.opencart.api.testcases.customer.RegisterCustomer -->
+    </classes>
+  </test> <!-- CustomerRegistrationTests(failed) -->
+</suite> <!-- Failed suite [OpenCartAPITestSuite] -->

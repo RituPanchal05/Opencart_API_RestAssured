@@ -1,0 +1,1 @@
+{"uuid":"c72921a8-a6d5-424b-98bc-2a10ad52a0e3","name":"com.opencart.api.testcases.admin.LoginAdmin","children":["964425c0-ef87-40c4-866b-2ee0f7d2c973"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1744218659735,"stop":1744218659740}],"afters":[],"start":1744218659710,"stop":1744218661438}
