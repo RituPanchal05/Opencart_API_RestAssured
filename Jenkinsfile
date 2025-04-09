@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git credentialsId: 'github-pat-id', url: 'https://github.com/RituPanchal05/Opencart_API_RestAssured.git'
+                git credentialsId: 'github-pat', url: 'https://github.com/RituPanchal05/Opencart_API_RestAssured.git'
             }
         }
 
