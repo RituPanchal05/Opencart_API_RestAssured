@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven_3.8.6'  // Name from Jenkins global tools config
-        jdk 'JDK_17'         // Also from Jenkins global config
+        maven 'Maven_3.8.6'  // Make sure this is set up in Jenkins global tool config
+        jdk 'JDK_17'         // Same for JDK
     }
 
     environment {
@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git credentialsId: 'your-credentials-id', url: 'https://github.com/RituPanchal05/Opencart_API_ResrAssured.git'
+                git credentialsId: 'github-pat-id', url: 'https://github.com/RituPanchal05/Opencart_API_RestAssured.git'
             }
         }
 
