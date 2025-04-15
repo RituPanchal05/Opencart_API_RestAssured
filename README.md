@@ -196,4 +196,4 @@ This framework is CI-friendly and can be easily integrated with:
 ## Contact
 
 **Email**: ritupanchal2004@gmail.com
-**LinkedIn**: in/ritu-panchal-60a035228
+**LinkedIn**: [in/ritu-panchal-60a035228](https://www.linkedin.com/in/ritu-panchal-60a035228/)
