@@ -24,14 +24,15 @@ opencart-api-automation/
 ├── src/
 │   ├── main/
 │   │   └── java/
-│   │       ├── base/                # Base classes (BaseTest, BaseClient)
 │   │       ├── clients/             # API request logic (e.g., AuthClient, ProductClient)
-│   │       ├── data/                # Payload builders / static data
+│   │       ├── config/              # Payload builders / static data
 │   │       └── utils/               # ConfigReader, AssertionUtils, etc.
 │   └── test/
 │       └── java/
-│           ├── testcases/          # TestNG test classes
-│           └── listeners/          # Test listeners for reporting/logging
+│           ├── assertions/          # TestNG test classes
+│           └── base/                # Test listeners for reporting/logging
+|           └── data/ 
+|           └── testcases/ 
 │
 ├── config.properties                # Config values like base URL and tokens
 ├── testng.xml                       # TestNG suite configuration
@@ -180,7 +181,6 @@ allure generate target/allure-results --clean -o target/allure-report
 - Authentication (Token Generation, Login)
 - Product APIs (CRUD Operations)
 - Customer APIs (CRUD Operations)
-- Order APIs (Order Processing, Status Updates)
 
 ---
 
@@ -189,30 +189,14 @@ allure generate target/allure-results --clean -o target/allure-report
 This framework is CI-friendly and can be easily integrated with:
 
 - Jenkins
-- GitHub Actions
-- GitLab CI
-- Azure Pipelines
 
 ---
 
-## Contribution
-
-1. Fork the repo
-2. Create a new branch (`feature/your-feature`)
-3. Commit your changes
-4. Push to the branch
-5. Open a pull request
-
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE)
 
 ---
 
 ## Contact
 
-**Author**: Your Name  
-**Email**: your.email@example.com  
-**LinkedIn**: [https://linkedin.com/in/yourname](https://linkedin.com/in/yourname)
+**Author**: Ritu Panchal
+**Email**: ritupanchal2004@gmail.com
+**LinkedIn**: in/ritu-panchal-60a035228
