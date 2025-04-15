@@ -12,7 +12,6 @@ This is a **REST Assured** based API Automation Framework for testing **OpenCart
 - Maven for build automation and dependency management
 - Allure Reports for elegant test reporting
 - Custom assertion utilities
-- CI/CD friendly structure
 
 ---
 
@@ -24,15 +23,14 @@ opencart-api-automation/
 ├── src/
 │   ├── main/
 │   │   └── java/
-│   │       ├── clients/             # API request logic (e.g., AuthClient, ProductClient)
+│   │       ├── clients/             # Contains classes responsible for sending API requests (e.g., AuthClient, CustomerClient)
 │   │       ├── config/              # Payload builders / static data
 │   │       └── utils/               # ConfigReader, AssertionUtils, etc.
 │   └── test/
 │       └── java/
-│           ├── assertions/          # TestNG test classes
-│           └── base/                # Test listeners for reporting/logging
-|           └── data/ 
-|           └── testcases/ 
+│           ├── assertions/           # Custom assertion classes to validate API responses in a reusable way
+|           └── data/                 # Test data specific to test cases (e.g., expected results, dynamic data inputs)
+|           └── testcases/            # TestNG test classes organized per API module (e.g., AuthTests, ProductTests)
 │
 ├── config.properties                # Config values like base URL and tokens
 ├── testng.xml                       # TestNG suite configuration
@@ -197,6 +195,5 @@ This framework is CI-friendly and can be easily integrated with:
 
 ## Contact
 
-**Author**: Ritu Panchal
 **Email**: ritupanchal2004@gmail.com
 **LinkedIn**: in/ritu-panchal-60a035228
