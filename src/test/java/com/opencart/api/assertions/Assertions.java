@@ -7,6 +7,12 @@ import static org.testng.Assert.*;
 
 import org.testng.Assert;
 
+
+/**
+ * @author Ritu Panchal
+ *  */
+
+
 public class Assertions {
 
     public static void assertStatusCode1(Response response, int expectedStatus) {
